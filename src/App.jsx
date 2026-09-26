@@ -3,6 +3,7 @@ import Hero from './Hero.jsx'
 import Services from './services.jsx'
 import Footer from './Footers.jsx'
 import './App.css'
+import BookingForm from './BookingForm.jsx' 
 
 const Service = [
   { nom: "Coupe cheveux", prix: 50 },
@@ -23,6 +24,7 @@ function App() {
           <Services key={index} nom={services.nom} prix={services.prix} />
         ))}
       </div>
+      <BookingForm/>
       <Footer />
     </div>
   )
